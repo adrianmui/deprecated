@@ -6,9 +6,47 @@
 </description>
     <link>https://adrianmui.github.io/</link>
     <atom:link href="https://adrianmui.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Jul 2016 04:54:01 -0400</pubDate>
-    <lastBuildDate>Mon, 25 Jul 2016 04:54:01 -0400</lastBuildDate>
+    <pubDate>Tue, 26 Jul 2016 00:52:59 -0400</pubDate>
+    <lastBuildDate>Tue, 26 Jul 2016 00:52:59 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Week 4 Ruby on Rails</title>
+        <description>&lt;h1&gt; Ruby on Rails &lt;/h1&gt;
+
+&lt;p&gt;Rails is a Ruby-based development framework tailored create intuitive web applications. Rail operates under the Model-View-Controller(MVC) organization scheme.&lt;/p&gt;
+
+&lt;p&gt;Today(Monday), we took an exploration dive into Rails by creating a Basic Blog.&lt;/p&gt;
+
+&lt;p&gt;Key points:&lt;/p&gt;
+
+&lt;h2&gt; Model &lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Pretty much the most important terminal command I’ve used today. This one-liner generates the app model, model tests, and ruby code which stores the object in the database by creating tables that store the value of its attributes.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:migrate&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Don’t forget to run this or the tables won’t actually be created.&lt;/p&gt;
+
+&lt;h2&gt;Controllers&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The controller class is the brains behind the madness that is HTTP requests, the database, and RubyObjects. To my understanding, the controller holds all the methods which instantiate our objects, assigns them via requests, and spits the necessary data out to complete the html forms.&lt;/p&gt;
+
+&lt;h2&gt;
+&lt;/h2&gt;
+</description>
+        <pubDate>Tue, 26 Jul 2016 00:45:00 -0400</pubDate>
+        <link>https://adrianmui.github.io/vcs/2016/07/26/week-4.html</link>
+        <guid isPermaLink="true">https://adrianmui.github.io/vcs/2016/07/26/week-4.html</guid>
+        
+        
+        <category>vcs</category>
+        
+      </item>
     
       <item>
         <title>Week 3 is Bye Terminal Hi Web!</title>
