@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "DraftKings Fantasy Basketball"
+categories: vcs
+---
+
+Intro
+------
+I'm in love with NBA Basketball. I'm an avid fan, a numbers guy, and as far as hobbies go I'd say it is something I am crazy passionate about. It's only right that I combine both my obsessions--coding and basketball-- together.
+
+A couple months ago, I joined my friend's fantasy league. Then I joined some more. We started playing Draftkings, a site that hosted daily fantasy competitions. I was hooked in an instant The game was fun and exhilerating. It riled the competitive edge in me when I was able to trump other players and claim the money prize.
+
+
+The Problem
+------
+
+Some months later, I was playing the competitions everyday. This would mean I would be manually doing research on the day's list of basketball players, calculating their risk vs upsides, and setting my lineup. The process would take hours. I got sick of it.
+
+The Solution
+------
+
+I wanted to play, but I didn't want to spend the time setting a lineup everytime. And I also didn't want to lose in money or ego. So I made a helper. I wrote some Python scripts which accessed the NBA API to organize data for players which satisfied my criteria. 
+
+The Vision
+------
+
+I want to create a full-fledged web app that delivers to the user a list of players that can help Draftkings daily fantasy players win their competitions. 
+
+Key points in the app will be
+
++ interactive. I want to design a model where users can easily communicate with the database. Something I noticed with other FantasyAdvice products is that they're extremely difficult to understand. I want mine to be as simple as Pie.
++ effectiveness. I want to prove that my product works and can consistently go positive
++ clean. I've always been big on the artistic side. I trust my design instincts. I want to make this app look sexy. I want users to want to make my free app their home page/screen.
+
+Awesome things I will learn from this project
+
++ Math. I'll be learning tons of math in order to complete this project.  I can't wait to translate my math skills into the practical application which is winning Draftking money competitions.
+
++ Creating and Finishing a Product. From top to bottom, I want to be proud that I made this project.
+
++ Testing and User-Feedback. Many things will go wrong during development, I'm sure. After production, I'll be testing the effectiveness of my model along with the start of the next NBA season to friends and family. I want to be the guy that can communicate with feedback and filter it effectively. I have a strong feeling that skill will be extremely important as I dive deeper in my career as a Full Stack Developer.
+
+
+
+
+

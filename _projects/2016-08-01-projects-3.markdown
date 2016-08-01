@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Block Calendar App"
+categories: vcs
+---
+
+Intro
+------
+I just want to be able to use the apps I make.
+
+The Problem
+------
+I'm currently using Google Calendar and I don't think it's very good. I think I could make a better one.
+
+
+The Solution
+------
+There are TWO goals for this project. The main goal is a very simple concept. The second goal is a very simple implementation.
+
++ Allow the user to create block-like objects which represent calendar events on the user's timesheet. The user will be able to freely move the blocks. The goal of this feature is for the user to easily be able to manipulate the calendar to match his/her own actual schedule. 
++ Clean. The interface can't be too loaded and has to be strictly simple. It has to look good for the user to use it often. As they should, because it's their calendar.
+
+
+The Vision
+------
+I just want to use it for myself.
+
+
+
+
+
+

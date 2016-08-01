@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Voicemail Priority"
+categories: vcs
+---
+
+The Problem
+------
+When users accumulate too many voicemails, it gets a little bit overwhelming and difficult to handle.
+
+The Solution
+------
+Parse the sound bites from Voicemails and organize them into seperate columns(priorities). Voicemails from high priority senders will take precedence over a random_id caller. The voicemail would also be prioritized over a list/table depending on the volume and length of call.
+
+The Vision
+------
+I want create an IOS app that takes over what is the current voicemail standard. Then I want to sell it to Apple. At worst I'll have learned more Swift(which is always helpful) and something nifty to use. What do I have to lose? Hell, it might even land me a job at one of the greatest companies of all time!
+
+Yup
+------
+
+This is a "there is a need for this and it hasn't been satisfied yet" kind of project. The goal is pretty straightforward and I intend to keep it that way.

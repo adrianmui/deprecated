@@ -1,0 +1,20 @@
+---
+layout: default
+title: Projects
+permalink: projects/
+---
+
+<h2>These are the major projects I will be showcasing for my portfolio. </h2>
+
+<h1 class="page-heading">Projects </h1>
+<ul class="post-list">
+  {% for post in site.projects %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <img src=""/>
+      </h2>
+    </li>
+  {% endfor %}

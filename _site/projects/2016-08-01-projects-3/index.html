@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Week 4 Ruby on Rails</title>
-  <meta name="description" content=" Ruby on Rails ">
+  <title>Block Calendar App</title>
+  <meta name="description" content="IntroI just want to be able to use the apps I make.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://adrianmui.github.io/vcs/2016/07/26/week-4.html">
+  <link rel="canonical" href="https://adrianmui.github.io/projects/2016-08-01-projects-3/">
   <link rel="alternate" type="application/rss+xml" title="Adrian" href="https://adrianmui.github.io/feed.xml">
 </head>
 
@@ -62,37 +62,28 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Week 4 Ruby on Rails</h1>
-    <p class="post-meta"><time datetime="2016-07-26T00:45:00-04:00" itemprop="datePublished">Jul 26, 2016</time></p>
+    <h1 class="post-title" itemprop="name headline">Block Calendar App</h1>
+    <p class="post-meta"><time datetime="2016-08-01T00:00:00-04:00" itemprop="datePublished">Aug 1, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h1> Ruby on Rails </h1>
+    <h2 id="intro">Intro</h2>
+<p>I just want to be able to use the apps I make.</p>
 
-<p>Rails is a Ruby-based development framework tailored create intuitive web applications. Rail operates under the Model-View-Controller(MVC) organization scheme.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>I’m currently using Google Calendar and I don’t think it’s very good. I think I could make a better one.</p>
 
-<p>Today(Monday), we took an exploration dive into Rails by creating a Basic Blog.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>There are TWO goals for this project. The main goal is a very simple concept. The second goal is a very simple implementation.</p>
 
-<p>Key points:</p>
+<ul>
+  <li>Allow the user to create block-like objects which represent calendar events on the user’s timesheet. The user will be able to freely move the blocks. The goal of this feature is for the user to easily be able to manipulate the calendar to match his/her own actual schedule.</li>
+  <li>Clean. The interface can’t be too loaded and has to be strictly simple. It has to look good for the user to use it often. As they should, because it’s their calendar.</li>
+</ul>
 
-<h2> Model </h2>
+<h2 id="the-vision">The Vision</h2>
+<p>I just want to use it for myself.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">rails</span> <span class="n">generate</span> <span class="n">model</span> <span class="p">[</span><span class="n">classObject</span><span class="p">]</span></code></pre></figure>
-
-<p>Pretty much the most important terminal command I’ve used today. This one-liner generates the app model, model tests, and ruby code which stores the object in the database by creating tables that store the value of its attributes.</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">db</span><span class="ss">:migrate</span></code></pre></figure>
-
-<p>Don’t forget to run this or the tables won’t actually be created.</p>
-
-<h2>Controllers</h2>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">rails</span> <span class="n">generate</span> <span class="n">controller</span> <span class="p">[</span><span class="n">classObject</span><span class="p">]</span></code></pre></figure>
-
-<p>The controller class is the brains behind the madness that is HTTP requests, the database, and RubyObjects. To my understanding, the controller holds all the methods which instantiate our objects, assigns them via requests, and spits the necessary data out to complete the html forms.</p>
-
-<h2>
-</h2>
 
   </div>
 
