@@ -22,11 +22,20 @@ Hint: if a value is greater than both its neighbors(combined value), then choose
 
 ```
 test cases
-nums1 = [1,3,1]
-nums2 = [1,2,3,4,5]
-nums3 = [2,1,1,4]
+nums1 = [1,3,1] #=> 3 
+nums2 = [1,2,3,4,5] #=> 9
+nums3 = [2,1,1,4] #=> 6
 ```
 
+Explanation:
+
+ for k houses
+ let M(k) respresent the value of the the house
+ let P(k) represent the max amount of money considering only the first k houses
+ P(0) would obviously be 0
+ P(1) would be M(1), the sum of the first house
+ P(k) = max( P(k-2) + M(k), P(k-1)) 
+  P(k-2) + M(k) would be robbing the current house, and P(k-1) would be robbing a previous house and this one isn't robbed)
 
 ```ruby
   def rob(nums)
@@ -43,10 +52,6 @@ nums3 = [2,1,1,4]
     arr.last
   end
 ```
-
-At index i, you have to choose which to add, (i-2) or (i-3)
-
-Therefore DP formula is :: DP[i] = max(DP[i-2], DP[i-3]) + num[i]
 
 <!--
 def rob2(nums)
