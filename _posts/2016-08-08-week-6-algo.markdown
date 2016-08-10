@@ -53,6 +53,9 @@ Explanation:
   end
 ```
 
+Time Complexity is linear, O(n), at most exams each element twice.
+
+
 <!--
 def rob2(nums)
   return 0 if nums.empty? || nums.nil?
@@ -74,12 +77,4 @@ end
 
 This is the more refined version doing the same thing.  -->
 
-```
-  tests 3,9,6
-  p rob(nums1)
-  p rob(nums2)
-  p rob(nums3)
-```
 
-
-Time Complexity is linear, O(n)
