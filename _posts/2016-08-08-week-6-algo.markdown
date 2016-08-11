@@ -42,8 +42,8 @@ Explanation:
     return 0 if nums.empty? || nums.nil?
     return nums[0] if nums.length == 1
 
-    start_index_one_or_two = [nums[0], nums[1]].max
-    arr = [nums[0], start_index_one_or_two]
+    inclusive = [nums[0], nums[1]].max
+    arr = [nums[0], inclusive]
     i = 2
     while i != nums.length
       arr[i] = [arr[i-2] + nums[i], arr[i-1]].max
