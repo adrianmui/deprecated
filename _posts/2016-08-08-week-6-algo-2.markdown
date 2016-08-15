@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Week 6 DP Algorithm: Pascal's Triangle"
-date:   2016-08-08 00:45:00 -0400
+date:   2016-08-09 00:45:00 -0400
 categories: vcs
 ---
 
@@ -21,37 +21,37 @@ Given numRows, generate the first numRows of Pascal's Triangle
 Write a function that prints out the first numRows rows of Pascal's Triangle. Assume numRows will always be a natural number.
 
 
-```python
-require 'pry'
-```
-
 ```ruby
-  def generate(num_rows)
-    return [1] if num_rows == 1
-    arr = [1,1]
-    tot_arr = [[1], arr]
-    
-    
-    (num_rows -2).times do
-      temp_arr = [1]
-      arr[1..-1].each_index do |i|
-        temp_arr << arr[i] + arr[i+1]
-      end
-    
-      temp_arr << 1
-      
-      arr = temp_arr
-      tot_arr << arr
+require 'benchmark'
+require 'pry'
+
+def generate(num_rows)
+  return [1] if num_rows == 1
+  arr = [1,1]
+  tot_arr = [[1], arr]
+
+  (num_rows -2).times do
+    temp_arr = [1]
+    arr[1..-1].each_index do |i|
+      temp_arr << arr[i] + arr[i+1]
     end
+  
+    temp_arr << 1
     
-    tot_arr
+    arr = temp_arr
+    tot_arr << arr
   end
+  tot_arr
+end
+
+puts Benchmark.measure {generate(1000)}
 ```
 
 This solution is in O(n^2).
 
-# puts Benchmark.measure {generate(1000)}
 
+
+```ruby
 def fact(n)
   (1..n).reduce(:*)
 end
@@ -68,12 +68,16 @@ def triangle(nth_line)
 end
 
 # puts Benchmark.measure {triangle(1000)}
+```
 
+
+```ruby
 def next_row(row) ([0] + row).zip(row + [0]).collect {|l,r| l + r } end
  
 def ros_pascal(n) n.times.inject([1]) {|x,_| next_row x } end
 
 # puts Benchmark.measure { ros_pascal_script }
+```
 
 
 ```ruby
