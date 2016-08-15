@@ -18,6 +18,8 @@ Given numRows, generate the first numRows of Pascal's Triangle
 
 ```
 
+<img src="https://rossta.net/assets/images/blog/pascals_triangle_color-a0dd53d5.jpg" alt="pascal" style="width:300px;height:200px;">
+
 Write a function that prints out the first numRows rows of Pascal's Triangle. Assume numRows will always be a natural number.
 
 
@@ -46,8 +48,6 @@ end
 
 puts Benchmark.measure {generate(1000)}
 ```
-
-<img src="https://rossta.net/assets/images/blog/pascals_triangle_color-a0dd53d5.jpg" alt="pascal" style="width:300px;height:200px;">
 
 <p>My thought process: Each item in the next row apart from it's sides is the sum of two indexes in the above row. 
 There's actually a method in enumerable: `each_cons(n)` which iterates through a block for each array of ceonsecutive elements. 
