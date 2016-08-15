@@ -47,12 +47,14 @@ end
 puts Benchmark.measure {generate(1000)}
 ```
 
+<img src="https://rossta.net/assets/images/blog/pascals_triangle_color-a0dd53d5.jpg" alt="pascal" style="width:300px;height:200px;">
+
 <p>My thought process: Each item in the next row apart from it's sides is the sum of two indexes in the above row. 
 There's actually a method in enumerable: `each_cons(n)` which iterates through a block for each array of ceonsecutive elements. 
-Anyways, It's a pretty simple task to add the summed values to another array and afterwards slapping on a few 1's on the side
+Anyways, It's a pretty simple task to add the summed values to another array and afterwards slapping 1's to each side of the array
 to recreate Pascal's triangle.</p>
 
-This solution is in O(n^2).
+The Time complexity of this method is O(n^3) is in O(n^2).
 
 ```ruby
 def fact(n)
@@ -74,7 +76,9 @@ end
 ```
 
 <p> Here is a more fun way to solve this problem. Here Pascal's values are calculated using the Binomial Theorem. 
-The arithmetic sequence of the Binomial Theorem is n!/((n-k)!k!). </p>
+The arithmetic sequence of the Binomial Theorem is n!/((n-k)!k!).
+
+The Time complexity of this method is O(n^3) </p>
 
 ```ruby
 def next_row(row) ([0] + row).zip(row + [0]).collect {|l,r| l + r } end
@@ -84,7 +88,7 @@ def ros_pascal(n) n.times.inject([1]) {|x,_| next_row x } end
 # puts Benchmark.measure { ros_pascal_script }
 ```
 
-<p> And here is Pascal's solution, which I don't really understand.</p>
+<p> And here is Rosetta's solution, which would be me if I were a Ruby-Fu Master.</p>
 
 
 ```ruby
