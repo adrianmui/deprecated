@@ -54,7 +54,7 @@ There's actually a method in enumerable: `each_cons(n)` which iterates through a
 Anyways, It's a pretty simple task to add the summed values to another array and afterwards slapping 1's to each side of the array
 to recreate Pascal's triangle.</p>
 
-The Time complexity of this method is O(n^3) is in O(n^2).
+The Time complexity of this method is in O(n^2).
 
 ```ruby
 def fact(n)
