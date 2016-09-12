@@ -5,9 +5,9 @@ date:   2016-09-10 00:45:00 -0400
 categories: vcs
 ---
 
-Given an array NUMS of n integers, find and three integers in NUMS such the sum is closest to a given number, target. 
+*Given an array NUMS of n integers, find three integers in NUMS such the sum is closest to a given number, target.*
 
-Return the sum of the three integers. You may assume that each input would have exactly one solution.
+*Return the sum of the three integers. You may assume that each input would have exactly one solution.*
 
 Example: 
 
@@ -16,7 +16,11 @@ Example:
   output: 2
 ```
 
-My initial thoughts were pretty simple: Loop over the elements of nums three times and save the closest value to target in a variable named close.
+My initial thoughts were pretty simple: 
+Loop over the elements of nums three times and save the closest value to target in a variable named close.
+
+
+## Solution 1
 
 ```javascript
 
@@ -42,7 +46,7 @@ var threeSumClosest = function(nums, target) {
 The solution is  in O(n^3), where n is number of elements in the array.
 
 
-That said a better(and faster) solution can be done in O(n^2). Actually, Allan Grønlund and Seth Pettie beat that in 2014 by devising an algorithm in {\displaystyle O(n^{2}/({\log n}/{\log \log n})^{2/3})} O(n^{2}/({\log n}/{\log \log n})^{2/3}), but we'll just ignore that for now :)
+That said a better(and faster) solution can be done in O(n^2). Actually, Allan Grønlund and Seth Pettie beat that in 2014 by devising an algorithm in O(n^2/((nlog(n))^(2/3))) but we'll just ignore that for now :)
 
 Better solution O(n^2)
 
@@ -80,6 +84,7 @@ credit /u/asbear from leetcode
 
 + when b and c are adjacent indexes, a, b, and c resets with a and b moving over 1 indexes to the right.
 
+## Solution 2
 
 ```javascript
 var threeSumCloset2 = function(nums, target) {
