@@ -9,12 +9,14 @@ Given an array NUMS of n integers, find and three integers in NUMS such the sum 
 
 Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
+Example: 
+
 ```ruby
   input: [-1,2,1,-4], 1
   output: 2
 ```
 
-My initial method:: O(n^3), where n is number of elements in the array
+My initial thoughts were pretty simple: Loop over the elements of nums three times and save the closest value to target in a variable named close.
 
 ```javascript
 
@@ -37,12 +39,46 @@ var threeSumClosest = function(nums, target) {
 };
 ```
 
+The solution is  in O(n^3), where n is number of elements in the array.
+
+
+That said a better(and faster) solution can be done in O(n^2). Actually, Allan Grønlund and Seth Pettie beat that in 2014 by devising an algorithm in {\displaystyle O(n^{2}/({\log n}/{\log \log n})^{2/3})} O(n^{2}/({\log n}/{\log \log n})^{2/3}), but we'll just ignore that for now :)
+
 Better solution O(n^2)
 
 1. sort the array to avoid On^3
-2. set the first two elements of the sorted array as a and b. then set the last element as c.
+2. set the first two elements of the sorted 
+array as a and b. then set the last element as c.
+
+```
+credit /u/asbear from leetcode
+
+----------------------------------------------------
+^  ^                                               ^
+|  |                                               |
+|  +- second                                     third
++-first
+```
+
 3. if the sum of first three elements are smaller than target, increase the index of b.
+
+```
+----------------------------------------------------
+^    ^                                             ^
+|    |                                             |
+|    +- second                                   third
++-first
+```
+
 4. else, decrease the index of c.
+```
+----------------------------------------------------
+^    ^                                          ^
+|    |                                          |
+|    +- second                                third
++-first
+```
+
 5. when b and c are adjacent indexes, a, b, and c resets with a and b moving over 1 indexes to the right.
 
 
